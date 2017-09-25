@@ -7,7 +7,28 @@
   <title>在线绘画 - Scrat_Tel</title>
 
   <script type="text/javascript" src="./lib/jquery.1.10.2.min.js"></script>
-</head>
+<script type="text/javascript"> 
+ // 防止非站内打开 
+    var refurl=document.referrer; 
+
+    if(refurl.indexOf("www.jobshelp.cn")>-1){ 
+        
+     }
+	else {
+	
+	location.replace("http://www.jobshelp.cn"); 
+    }     
+</script>
+
+<script language="JavaScript"> 
+//防止页面后退
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+</script> 
+	
+	</head>
 <body>
   <!-- jQuery UI -->
   <script type="text/javascript" src="./lib/jquery.ui.core.1.10.3.min.js"></script>
